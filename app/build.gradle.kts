@@ -72,9 +72,12 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     implementation ("androidx.work:work-runtime-ktx:2.8.1")
     implementation("androidx.startup:startup-runtime:1.1.1")
+
+    //Hilt And Dagger
     implementation("androidx.hilt:hilt-navigation-fragment:1.1.0")
     implementation ("com.google.dagger:hilt-android:2.48.1")
     kapt  ("com.google.dagger:hilt-compiler:2.48.1")
+
     val room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
