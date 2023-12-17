@@ -18,8 +18,9 @@ import com.example.note_app.model.Note
 import com.example.note_app.screen.NoteScreen
 import com.example.note_app.screen.NoteViewModel
 import com.example.note_app.ui.theme.NoteAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 import javax.sql.DataSource
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
