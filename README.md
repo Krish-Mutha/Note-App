@@ -1,7 +1,5 @@
 # Note-App
 <br>
-Built using:
-<br>
 - ROOM DB <br>
 - Hilt & Dagger <br>
 - ViewModels <br>
