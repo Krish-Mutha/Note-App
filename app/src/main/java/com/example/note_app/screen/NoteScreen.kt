@@ -32,12 +32,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.note_app.R
 import com.example.note_app.components.NoteButton
 import com.example.note_app.components.NoteInputText
 import com.example.note_app.data.NotesDataSource
 import com.example.note_app.model.Note
-import java.time.format.DateTimeFormatter
+import com.example.note_app.R
+import com.example.note_app.util.formatDate
+
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -143,15 +144,11 @@ fun NoteRow(
                 style = MaterialTheme.typography.titleMedium
             )
 
-            //Text(text = formatDate(note.entryDate.time), style = MaterialTheme.typography.bodySmall)
+            Text(text = formatDate(note.entryDate.time),
+                style = MaterialTheme.typography.bodySmall)
         }
 
     }
 }
 
 
-@Preview(showBackground = true)
-@Composable
-fun NoteScreenPreview(){
-    NoteScreen(notes = NotesDataSource().loadNotes(), onAddNote = {}, onRemoveNote = {})
-}
